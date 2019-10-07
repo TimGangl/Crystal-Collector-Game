@@ -1,0 +1,88 @@
+<!DOCTYPE <!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector Game!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h1 class="text-center border border-dark b-2 p-2 p-3 mb-2 bg-light text-dark">Crystal Collector!</h1>
+            </div>
+        </div>
+        <div class=" row justify-content-center">
+            <div class="col-sm-4 ">
+                <h3 class="text-center border border-dark b-2 p-2 p-3 mb-2 bg-light text-dark">Instructions for CCG</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 border border-dark b-2 p-2 p-3 mb-2 bg-light text-dark">
+                <p>You will be given a random number at the start of the
+                    game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                    to your total score.</p>
+                <p>You win the game by matching your total score to to random number, you lose the game if your
+                    total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <div class="card-group">
+                    <div class="card border border-dark text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Target Num</h5>
+                            <p class="card-text" id="taget-num">0</p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">W's or L's</h5>
+                            <p class="card-text">Wins:<span id="Wins">0</span></p>
+                            <p class="card-text">Losses:<span id="losses">0</span></p>
+                        </div>
+                    </div>
+                    <div class="card border border-dark text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Your Score</h5>
+                            <p class="card-text" id="your-score">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-8 offset-2">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary"><img class="image-thumbnail"
+                                src="assets/images/fluorite.jpg" alt="flourite"></button>
+                        <button type="button" class="btn btn-secondary"><img class="image-thumbnail"
+                                src="assets/images/labradorite.jpg" alt="labradorite"></button>
+                        <button type="button" class="btn btn-secondary"><img class="image-thumbnail"
+                                src="assets/images/opal.jpg" alt="opal"></button>
+                        <button type="button" class="btn btn-secondary"><img class="images-thumbnail"
+                                src="assets/images/ruby.jpg" alt="ruby"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./javascript/game.js" async defer></script>
+</body>
+
+</html>

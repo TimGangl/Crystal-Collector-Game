@@ -51,16 +51,18 @@ $(document).ready(function () {
 
     //reset game
     function resetGame() {
-        scoreUser;
         fluorValue = generateCrystalValue();
         labraValue = generateCrystalValue();
         opalValue = generateCrystalValue();
         rubyValue = generateCrystalValue();
         generateTargetNum();
+        scoreUser = 0;
+        userScore.text(scoreUser);
         console.log(fluorValue);
         console.log(labraValue);
         console.log(opalValue);
         console.log(rubyValue);
+        console.log(scoreUser);
     };
 
     function tallyGems(x) {
